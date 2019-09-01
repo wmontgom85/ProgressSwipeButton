@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom Swipe Button -->
+    <dimen name="custom_swipe_padding">3dp</dimen>
+    <dimen name="custom_swipe_progress_height">45dp</dimen>
+    <dimen name="custom_imageview_translation_y">7dp</dimen>
+    <dimen name="custom_swipe_button_text">18sp</dimen>
+    <dimen name="smaller_text">12sp</dimen>
+
+    <!-- Margins based on 5s -->
+    <dimen name="smallest_margin">5dp</dimen>
+    <dimen name="smaller_margin">10dp</dimen>
+    <dimen name="small_margin">20dp</dimen>
+    <dimen name="base_margin">25dp</dimen>
+    <dimen name="large_margin">30dp</dimen>
+    <dimen name="larger_margin">40dp</dimen>
+    <dimen name="largest_margin">50dp</dimen>
+
+    <dimen name="edge_margin">15dp</dimen>
+</resources>

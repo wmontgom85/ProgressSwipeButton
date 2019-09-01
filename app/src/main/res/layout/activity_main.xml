@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.wmontgom85.progressswipebutton.widget.ProgressSwipeButton
+        android:id="@+id/bid_swipe_button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="@dimen/edge_margin"
+        android:layout_marginStart="@dimen/edge_margin"
+        android:layout_marginEnd="@dimen/edge_margin"
+        android:layout_marginBottom="@dimen/edge_margin"
+        android:visibility="visible"
+        android:hapticFeedbackEnabled="true"/>
+
+</LinearLayout>

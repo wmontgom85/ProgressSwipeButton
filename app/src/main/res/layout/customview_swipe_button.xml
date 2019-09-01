@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingTop="@dimen/custom_swipe_padding"
+        android:paddingBottom="@dimen/custom_swipe_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/border_rounded_5dp"
+            android:clipChildren="true"
+            android:clipToPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/bg_progress"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/border_5dp_5faa94_sb"
+                android:alpha="0"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/circular_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circular"
+                    android:secondaryProgress="100"/>
+
+                <ImageView
+                    android:id="@+id/swipe_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_alignTop="@id/circular_progress"
+                    android:layout_alignBottom="@id/circular_progress"
+                    android:layout_alignStart="@id/circular_progress"
+                    android:layout_alignEnd="@id/circular_progress"
+                    android:src="@drawable/icon_checked_in_white"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/slide_button"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:background="@drawable/shape_button"
+        android:paddingStart="@dimen/smaller_margin"
+        android:paddingEnd="@dimen/smaller_margin"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@id/bar"
+        android:elevation="1dp"
+        android:layout_alignBottom="@id/bar"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/slide_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Optional Text"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_swipe_button_text"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_bid_slider"
+            android:layout_marginStart="@dimen/smaller_text"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resting_text"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="@dimen/smaller_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_54"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeMaxTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        android:elevation="0dp"
+        android:gravity="center"
+        android:textSize="@dimen/custom_swipe_button_text"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
